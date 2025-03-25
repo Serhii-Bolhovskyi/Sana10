@@ -11,3 +11,13 @@ div2.style.cssText =
 const div3 = document.getElementById("div3");
 div3.style.cssText =
     "color: red; background: lightcoral; fontSize: 12px; padding: 5px; text-align: left;";
+
+const table = document.getElementById("table");
+ for(let i = 0; i < table.rows.length; i++){
+     const row = table.rows[i];
+     for(let j = 0; j < row.cells.length; j++){
+         if ((i + j) % 2 === 0) {
+             row.cells[j].classList.add('selected');
+         }
+     }
+ }
