@@ -1,3 +1,10 @@
+//task 3.1
+const paragraphs = document.querySelectorAll("#paragraphs p");
+
+const lengths = Array.from(paragraphs).map(p => p.innerText.length)
+console.log(lengths)
+
+// task 3.2
 let arr = [20, 17, 4, -4, 10, -9, 13, 4, 12, 22, 13, 19, 1, 3];
 const maxEl = Math.max(...arr);
 const minEl = Math.min(...arr)
@@ -36,4 +43,5 @@ console.log("К-ть чисел, що містить більше ніж одн�
 console.log("К-ть додатний чисел: " + possitive, "К-ть відʼємних чисел: " + negative);
 
 console.log(newArr)
+
 console.log(reverseArr)
